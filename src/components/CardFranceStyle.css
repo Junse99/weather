@@ -1,0 +1,68 @@
+.containerFrance{
+  background-color: rgba(230, 214, 217, 0.8);
+  grid-area: france;
+  border-radius: 10px;
+  color: #3B3B3B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerFrance__information{
+  text-align: center;
+}
+
+.containerFrance h2{
+  color: #3B3B3B;
+  font-size: 2rem;
+}
+
+.containerFrance > p{
+  color: #888888;
+}
+.containerFrance__imgRound{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.containerFrance__temperature p{
+  font-size: 4rem;
+  display: inline-block;
+}
+.containerFrance__temperature img{
+  height: 50px;
+  width: 50px;
+}
+
+.containerFrance__text {
+  width: 70%;
+  text-align: right;
+}
+
+@media screen and (max-width: 880px) {
+  .containerFrance{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .containerFrance__text {
+    display: none;
+  }
+
+  .containerFrance__information{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .containerFrance__temperature{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+}
