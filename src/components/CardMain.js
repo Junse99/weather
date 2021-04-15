@@ -1,16 +1,19 @@
 import React from "react";
+import { capitalize } from "../Utilities/capitalize";
+import { getTheme } from "../Utilities/theme";
 import "./CardMainStyle.css";
 
-export const CardMain = ({icon='https://www.flaticon.com/svg/vstatic/svg/2698/2698213.svg?token=exp=1618177099~hmac=c08220636d79ce8305606343abef6eb9'}) => {
+export const CardMain = ({temperature, city, description='Clima', country, icon=''}) => {
   return (
-    <div className="container__main">
+    <div className={`container__main ${getTheme('cardMain', temperature)}`}>
       <div className='container__main--temperature'>
-        <p className="gradeNumber">27°</p>
+        <p className="gradeNumber">{temperature}</p>
         <img src={icon}/>
       </div>
-      <p className='container__main--city'>Bogotá,</p>
-      <p className='container__main--country'>Colombia</p>
-      <p className='container__main--date'>Abril 10, 2021</p>
+      <p className='container__main--city'>{city},</p>
+      <p className='container__main--country'>{country}</p>
+      <strong>{capitalize(description)}</strong>
+      <p className='container__main--date'>{new Date(Date.now()).toDateString()}</p>
     </div>
   );
 };

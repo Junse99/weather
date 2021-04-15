@@ -1,8 +1,21 @@
-.containerFrance{
+.containerFranceLight{
   background-color: rgba(230, 214, 217, 0.8);
+  --color-primary: #3B3B3B;
+  --color-secundary: #888888;
+  color: var(--color-primary);
+}
+
+.containerFranceDark{
+  background-color: rgba(113, 130, 166, 0.8);
+  --color-primary: #050042;
+  --color-secundary: #fff;
+  color: var(--color-primary);
+
+}
+
+.containerFrance {
   grid-area: france;
   border-radius: 10px;
-  color: #3B3B3B;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,12 +27,13 @@
 }
 
 .containerFrance h2{
-  color: #3B3B3B;
+  color: --color-primary;
   font-size: 2rem;
 }
 
-.containerFrance > p{
-  color: #888888;
+.information__city p{
+  
+  color: var(--color-secundary);
 }
 .containerFrance__imgRound{
   height: 6rem;
@@ -40,6 +54,7 @@
 .containerFrance__text {
   width: 70%;
   text-align: right;
+  color: var(--color-secundary);
 }
 
 @media screen and (max-width: 880px) {

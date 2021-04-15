@@ -1,12 +1,31 @@
 
-.day{
+.dayLight{
   background-color: rgba(230, 214, 217, 0.8);
+  --color-primary: #3B3B3B;
+  --color-secundary: #888888;
+  --color-third: #888888;
+  color: var(--color-secundary);
+}
+
+.dayDark{
+  background-color: rgba(113, 130, 166, 0.8);
+  --color-primary: #050042;
+  --color-secundary: #fff;
+  --color-third: #514E76;
+  color: var(--color-secundary);
+}
+
+.day {
   border-radius: 10px;
   padding: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
-  color: #3B3B3B;
+}
+
+.day small {
+  z-index: 2;
+  color: var(--color-primary)
 }
 
 .day img{
@@ -23,4 +42,5 @@
   font-weight: normal;
   margin: auto;
   z-index: 1;
+  color: var(--color-primary);
 }

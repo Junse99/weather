@@ -1,6 +1,15 @@
+.container__mainLight{
+  --color-primary: #3B3B3B;
+  --color-secundary: #888888;
+  color: var(--color-primary);
+}
+.container__mainDark{
+  --color-primary: #050042;
+  --color-secundary: #514E76;
+  color: var(--color-primary);
+}
 .container__main{
   grid-area: left;
-  color: #3B3B3B;
   margin-left: 1.5rem;
 }
 
@@ -19,7 +28,7 @@
 .container__main--city{
   font-size: 2rem;
   font-weight: 400;
-  color: #676767;
+  color: var(--color-secundary);
   margin-block-start: 0;
   margin-block-end: 0;
   padding: 0;
@@ -30,7 +39,7 @@
   font-weight: 700;
 }
 .container__main--date{
-  color: #676767;
+  color: var(--color-secundary);
   font-size: 1rem;
   font-weight: 400;
   
@@ -51,7 +60,7 @@
   .gradeNumber{
     font-size: 4rem;
   }
-
+  
   .container__main--city{
     font-size: 1.5rem;
   }
