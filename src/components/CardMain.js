@@ -4,6 +4,7 @@ import { getTheme } from "../Utilities/theme";
 import "./CardMainStyle.css";
 
 export const CardMain = ({temperature, city, description='Clima', country, icon=''}) => {
+  
   return (
     <div className={`container__main ${getTheme('cardMain', temperature)}`}>
       <div className='container__main--temperature'>
