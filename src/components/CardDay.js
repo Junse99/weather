@@ -14,7 +14,7 @@ export const CardDay = ({
     <div className={`day ${getTheme('cardDay', theme)}`} style={{gridArea: `${area}`}}>
       <b>{date}</b>
       <small>{description}</small>
-      <h2>{temperature}</h2>
+      <h2>{temperature}°</h2>
       <img src={icon}/>
     </div>
   )

@@ -22,7 +22,7 @@ export const CardFrance = ({
         />
       </div>
       <div className="containerFrance__temperature">
-        <p className="temperature__number">{temperature}</p>
+        <p className="temperature__number">{temperature}°</p>
         <img src={icon} />
       </div>
       <p className="containerFrance__text">
